@@ -14,7 +14,7 @@ type VersionResponse struct {
 // StableVersionHandler handles requests for the stable version
 func StableVersionHandler(w http.ResponseWriter, r *http.Request) {
     versionResponse := VersionResponse{
-        Version: "1.0.0",
+        Version: "v1",
     }
 
     w.Header().Set("Content-Type", "application/json")

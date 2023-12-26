@@ -14,7 +14,7 @@ type VersionResponse struct {
 // LatestVersionHandler handles requests for the latest version
 func LatestVersionHandler(w http.ResponseWriter, r *http.Request) {
     versionResponse := VersionResponse{
-        Version: "2.0.0",
+        Version: "v2",
     }
 
     w.Header().Set("Content-Type", "application/json")
